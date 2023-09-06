@@ -1,6 +1,8 @@
 # Learn-GitBranching
 ![https://learngitbranching.js.org/](https://www.scaler.com/topics/images/git-branching-strategy-thumbnail.webp)
 
+[Click🥇learnGit-Branching!](https://learngitbranching.js.org/?locale=pt_BR)
+
 # Compartilhar é se importar!
 
 
