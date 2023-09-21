@@ -17,3 +17,27 @@ O Git tem como objetivo manter os commits tão leves quanto possível, de forma 
 `O Git também mantém um histórico de quando ocorreu cada commit. É por isso que a maioria dos commits tem ancestrais acima de si -- que indicamos usando setas em nossa visualização. 
 Manter a história é ótimo para todos que trabalham no projeto! Há muito para aprender, mas por enquanto pense nos commits como snapshots do seu projeto. 
 Os commits são muito leves, e mudar de um para outro é extremamente rápido!`
+
+# Comandos Git
+
+# Lista de Comandos:
+
+## Comandos
+## Iniciando um projeto #01
+```
+git init: descrição : Comando para iniciar o repositório git. 
+```
+## Adicionando arquivos para commit #02
+```
+git add: descrição : Comando para adicionar um ou mais arquivos em staging.
+arquivo.txt: descrição : Nome de um ou mais arquivos.
+```
+## Como fazer um commit #03
+```
+git commit -m "alterações"
+
+-m = flag para escrever uma mensagem de commit.
+"alterações" = mensagem descrevendo ajustes.
+OBS: Sem utilizar a flag -m: Acontece que um editor será aberto para digitar a mensagem commit.
+```
+
