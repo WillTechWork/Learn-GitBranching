@@ -219,5 +219,48 @@ branch: Comando para gerenciar branches.
 -D: CFlag para forçar a apagar o branch localmente.
 nome: Nome do branch.
 ```
+## Usando REBASE para atualizar um branch #027
+```
+git rebase origem destino
+Descrição:
+
+rebase: comando para reaplicar commits.
+origem: branch mais atualizado.
+destino: branch para atualizar, ou seja, que será selecionado para ser atualizado.
+```
+## Usando REBASE para corrigir a origem da branch #028
+```
+git rebase --onto origem anterior branch
+Descrição:
+
+rebase: comando para reaplicar commits.
+--onto: flag para indicar a nova origem.
+origem:  branch ou commit que deve ser a origem.
+anterior: origem incorreta do branch.
+branch: branch que precisa da correção.
+```
+## Como remover um arquivo de STAGING #029
+```
+git restore --staged [nome]
+Descrição:
+
+restore: comando para restaurar o estado anterior.
+--staged: flag para olhar arquivos em staging.
+nome: nome do arquivo.
+```
+## O que é um conflito #030
+```
+Acontece quando duas ou mais alterações são realizadas
+no mesmo pedaço de um arquivo e o git não sabe como aplicar a
+alteração mais recente.
+
+Conflitos: São indicados pelos marcadores.
+
+conflito:
+
+descrição: Comando para fazer o download do repositório.
+>>>,===,e
+<<<        Marcadores de conflito.
+```
 
 
