@@ -156,5 +156,13 @@ Remote: Descrição: Comando para gerenciar remotes.
 Informação extra:	Sem usar a flag -v, você verá apenas o nome de cada remote.
 
 ```
+## Como criar um REMOTE #021
+```
+git remote add [nome do remote, a origem]
+
+Descrição: Comando para gerenciar remotes e
+           Comando para criar novos remotes.
+           
+```
 
 
