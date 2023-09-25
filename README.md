@@ -132,10 +132,29 @@ repositório desde que você tenha acesso a ele.
 ## Como fazer um clone #018
 ```
 git clone [url]
-Descrição:Comando para baixar o repositório + o url, caminho do repositório onde se encontra o mesmo.
+Descrição: Comando para baixar o repositório + o url, caminho do repositório onde se encontra o mesmo.
 Exemplo: no terminal digite: git clone + o link do repositório + ENTER.
 Após, dê o Open Folder ou Abrir a Pasta, localize o repositório.
 E mão na massa para a criatividade do projeto! ;D
+```
+## O que é um REMOTE #019
+```
+É um repositório na nuvem por exemplo no github ou no gitlab.
+Toda vez que você faz um clone, você tem pelo menos um remote -o origin.
+remote: Descrição: É um repositório na nuvem por exemplo no github ou no GitLab.
+informação extra: Toda vez que você faz um clone você tem pelo menos um remote - o origin.
+```
+
+## Como listar os REMOTES #020
+```
+git remote -v: Descrição: Comando para gerenciar remotes.
+
+Sem usar o flag -v, você verá apenas o nome de cada remote.
+Remote: Descrição: Comando para gerenciar remotes.
+
+-v: Flag para mostrar detalhes do remote.
+Informação extra:	Sem usar a flag -v, você verá apenas o nome de cada remote.
+
 ```
 
 
