@@ -133,6 +133,9 @@ repositório desde que você tenha acesso a ele.
 ```
 git clone [url]
 Descrição:Comando para baixar o repositório + o url, caminho do repositório onde se encontra o mesmo.
+Exemplo: no terminal digite: git clone + o link do repositório + ENTER.
+Após, dê o Open Folder ou Abrir a Pasta, localize o repositório.
+E mão na massa para a criatividade do projeto! ;D
 ```
 
 
