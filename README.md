@@ -42,8 +42,9 @@ OBS: Sem utilizar a flag -m: Acontece que um editor será aberto para digitar a 
 ```
 ## Conferindo os detalhes de um commit #04
 ```
-git show: Descrição: comando que mostra detalhes de um commit.
-exemplo adicionando 09c6d68: descrição: hash (identificador) do commit de interesse a ser analisado.
+git show: Descrição:
+Comando que mostra detalhes de um commit.
+Exemplo adicionando 09c6d68: descrição: hash (identificador) do commit de interesse a ser analisado.
 ```
 ## Ambiente de staging #05
 ```
@@ -56,22 +57,25 @@ git status: Descrição: mostra o ambiente de staging.
 ```
 ## Conferindo o histórico #07
 ```
-git log: Descrição: mostra uma lista interativa de commits
-com o hash e a mensagem de cada commit.
+git log: Descrição:
+Mostra uma lista interativa de commits com o hash e a mensagem de cada commit.
 ```
 ## Adicionando arquivos para commit interativamente #08
 ```
-git add: Descrição: Comando para adicionar um ou mais arquivos em staging = preparando os arquivos para envio.
+git add: Descrição:
+Comando para adicionar um ou mais arquivos em staging = preparando os arquivos para envio.
 -p: flag para escolher interativamente alterações específicas para commit.
 ```
 ## Criando um novo branch #09
 ```
-git branch + [nome da branch a ser criada]: Descrição: Comando para criar uma nova branch, esse comando
+git branch + [nome da branch a ser criada]: Descrição:
+Comando para criar uma nova branch, esse comando
 apenas cria a branch, ainda é preciso trocar de branch para fazer commits.
 ```
 ## O que é um pull request #010
 ```
-pull request: Descrição: É o processo de submeter alterações para revisão no GitHub.
+pull request: Descrição:
+É o processo de submeter alterações para revisão no GitHub.
 No GitLab esse processo é chamado de merge request.
 merge request:descrição: É o nome do mesmo processo do GitLab
 ```
@@ -85,7 +89,8 @@ git diff: Descrição: Lista de forma interativa as alterações de cada arquivo
 ```
 ## O que é o HEAD #013
 ```
- HEAD: Descrição: É um ponteiro que indica em qual branch você está localizado.
+ HEAD: Descrição:
+É um ponteiro que indica em qual branch você está localizado.
 É utilizado na hora de trocar de branches e de desfazer commits.
 ```
 ## Trocando de Branch ao criar um branch novo #014
@@ -132,6 +137,7 @@ repositório desde que você tenha acesso a ele.
 ## Como fazer um clone #018
 ```
 git clone [url]
+
 Descrição: Comando para baixar o repositório + o url, caminho do repositório onde se encontra o mesmo.
 Exemplo: no terminal digite: git clone + o link do repositório + ENTER.
 Após, dê o Open Folder ou Abrir a Pasta, localize o repositório.
@@ -178,10 +184,40 @@ Descrição: Comando para gerenciar remotes.
 git push --set-upstream remote branch
 
 Descrição:
+
 git push: comando para enviar alterações.
 --set-upstream: flag para criar o rastreamento.
 remote: repositório de destino.
 branch: branch para fazer o acompanhamento.
+```
+
+## Como fazer o PUSH #024
+```
+git push remote branch
+
+Descrição:
+
+push: comando para enviar as alterações.
+remote: repositório de destino.
+branch: qual branch enviar.
+```
+## Apagando um BRANCH localmente #025
+```
+git branch -b [nome]
+Descrição:
+
+branch: comando para gerenciar branches.
+-b: flag para apagar o branch localmente.
+nome: nome do branch.
+```
+## Apagando um BRANCH forçadamente #026
+```
+git branch -D [nome da branch a que deseja apagar]
+Descrição:
+
+branch: Comando para gerenciar branches.
+-D: CFlag para forçar a apagar o branch localmente.
+nome: Nome do branch.
 ```
 
 
