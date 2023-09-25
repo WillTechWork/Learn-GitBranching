@@ -164,5 +164,24 @@ Descrição: Comando para gerenciar remotes e
            Comando para criar novos remotes.
            
 ```
+## Como renomear um REMOTE #022
+```
+git remote rename atual novo
+
+Descrição: Comando para gerenciar remotes.
+           Comando para renomear o remote.
+           Atual: Nome atual do remote.
+           Novo: Novo nome do remote.
+```
+## Como criar o rastreamento do BRANCH no remote
+```
+git push --set-upstream remote branch
+
+Descrição:
+git push: comando para enviar alterações.
+--set-upstream: flag para criar o rastreamento.
+remote: repositório de destino.
+branch: branch para fazer o acompanhamento.
+```
 
 
