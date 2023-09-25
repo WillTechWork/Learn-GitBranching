@@ -129,5 +129,10 @@ acesso a ele.
 Qual repositório você pode fazer o clone? É possível clonar qualquer
 repositório desde que você tenha acesso a ele.
 ```
+## Como fazer um clone #018
+```
+git clone [url]
+Descrição:Comando para baixar o repositório + o url, caminho do repositório onde se encontra o mesmo.
+```
 
 
