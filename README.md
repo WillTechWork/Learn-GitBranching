@@ -255,12 +255,113 @@ no mesmo pedaço de um arquivo e o git não sabe como aplicar a
 alteração mais recente.
 
 Conflitos: São indicados pelos marcadores.
+>>>, ===, e, <<<
+conflito:descrição: Comando para fazer o download do repositório.
+```
 
-conflito:
+## Ajustar o último COMMIT #031
+```
+git commit --amend
 
-descrição: Comando para fazer o download do repositório.
->>>,===,e
-<<<        Marcadores de conflito.
+commit: descrição: comando para lidar com commits.
+amend: descrição: flag para corrigir o último commit.
+
+Obs: Por padrão o amend fará o ajuste do último
+commit gerando um novo commit.
+```
+
+## Descartando ALTERAÇÔES #032
+```
+git restore [nome]
+
+restore:descrição:comando para restaurar o estado anterior.
+[nome]:descrição:nome do arquivo.
+Obs: As alterações descartadas não estão em staging.
+```
+
+## Fazendo um CLONE nomeado #033
+```
+git clone [url nome]
+
+git clone:descrição: comando para fazer o download do repositório.
+url:descrição: caminho do repositório.
+nome:descrição: nome da pasta de destino.
+```
+## Mudando de BRANCH #034
+```
+git switch [nome]
+
+nome: descrição: nome do branch.
+switch: descrição: comando para troca de branch.
+```
+## Mudando de BRANCH ao criar um branch novo #035
+```
+git switch -c nome
+
+switch:descrição: comando para troca de branch.
+-c:descrição: flag para criar novo branch.
+nome:descrição: nome do branch.
+
+```
+## Desfazendo COMMITS recentes #036
+```
+git reset HEAD ~3
+
+reset:descrição:comando para restaurar um estado anterior.
+HEAD:descrição: ponteiro que indica o estado atual.
+~3:descrição: quantidade de commits a serem desfeitos.
+```
+
+## Desfazendo o último COMMIT #037
+```
+git reset HEAD^
+
+reset:descrição: comando para restaurar um estado anterior.
+HEAD:descrição: ponteiro que indica o estado atual.
+^:descrição: o circunflexo é um atalho para o último commit.
+```
+## Desfazendo COMMITS de forma soft #038
+```
+git reset HEAD^ --soft
+
+reset:descrição: comando para restaurar um estado anterior.
+HEAD:descrição: ponteiro que indica o estado atual.
+^:descrição: o circunflexo é um atalho para o último commit.
+--soft:descrição: flag para guardar alterações em staging.
+```
+## Reaproveitando COMMIT #039
+```
+git commit -c ORIG_HEAD
+
+commit:descrição: comando para lidar com commits.
+-c:descrição: flag para reaproveitar a mensagem de commit.
+ORIG_HEAD:descrição: cópia do estado anterior contendo a mensagem do commit anterior.
+Obs: Se precisar editar a mensagem, use a flag -c.
+```
+## O que é STASH #040
+```
+stash:descrição: É um conjunto de alterações que ficam salvas em uma pilha.
+
+utilidade:descrição: O comando permite salvar as mudanças feitas e voltar para um
+estado limpo, ou seja, sem mudanças, do seu diretório de trabalho.
+
+"n" em stash@{n} indice do stash
+```
+## Fazendo o STASH de mudanças #041
+```
+git stash push
+
+stash:descrição: comando para gerenciar stashes.
+push:descrição: comando para criar um novo stash.
+Obs: o push pode ser omitido.
+```
+## Nomeando um STASH #042
+```
+git stash -m "alterações"
+
+stash:descrição: comando para gerenciar stashes.
+-m:descrição:flag para escrever uma mensagem de stash.
+entre os "":descrição: mensagem para descrever às atualizações propostas, ou seja, escrevendo a descrição da alteração.
 ```
 
 
