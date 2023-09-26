@@ -363,5 +363,29 @@ stash:descrição: comando para gerenciar stashes.
 -m:descrição:flag para escrever uma mensagem de stash.
 entre os "":descrição: mensagem para descrever às atualizações propostas, ou seja, escrevendo a descrição da alteração.
 ```
+## Listando STASHES #043
+```
+git stash list
+
+stash:descrição: comando para gerenciar stashes.
+list:descrição: comando para listar os stashes.
+```
+## Removendo um STASH da pilha e aplicando-o #044
+```
+git stash pop
+
+stash:descrição: comando para gerenciar stashes.
+pop:descrição: remove o stash da pilha e aplica as mudanças.
+Obs: sem passar um índice a stash mais recente é usada.
+```
+## Jogando STASH fora #045
+```
+git stash drop stash@{2}
+
+stash:descrição: comando para gerenciar stashes.
+drop:descrição: remove o stash da pilha.
+stash@{2}:descrição: índice do penúltimo stash.
+Obs: Sem passar um índice a stash mais recente é usada.
+```
 
 
