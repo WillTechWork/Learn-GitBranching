@@ -387,5 +387,66 @@ drop:descrição: remove o stash da pilha.
 stash@{2}:descrição: índice do penúltimo stash.
 Obs: Sem passar um índice a stash mais recente é usada.
 ```
+## Aplicando um STASH sem remover ele da pilha #046
+```
+git stash apply stash@{2}
+
+stash:descrição: comando para gerenciar stashes.
+apply:descrição: aplica as mudanças de um stash sem remover ele da pilha.
+stash@{2}:descrição: índice do antepenúltimo stash.
+Obs: sem passar um índice a stash mais recente é usada.
+```
+## Fazendo CLONE de um branch específico #047
+```
+git clone -b [nome]
+
+clone:descrição: comando para baixar um repositório.
+-b:descrição: flag para indicar o branch escolhido.
+nome:descrição: nome do branch escolhido.
+```
+## Renomeando um BRANCH #048
+```
+git branch -m [nome]
+
+branch:descrição: comando para gerenciar branches.
+-m:descrição: opção para mover um branch com força.
+nome:descrição: nome novo do branch.
+Obs: É necessário estar no branch a ser renomeado.
+```
+## Fazendo o MERGE de dois branches #049
+```
+git merge origem destino
+
+merge:descrição: comando para juntar branches.
+origem:descrição: branch com as alterações a serem aplicadas.
+destino:descrição: branch que deve receber as alterações.
+```
+## Fazendo um PULL #050
+```
+git pull remote branch
+
+pull:descrição:comando para baixar alterações.
+remote:descrição:repositório de onde baixar as alterações.
+branch:descrição:nome do branch para baixar alterações.
+Obs: Normalmente, tanto o remote quanto o branch podem ser omitidos.
+```
+## Fazendo um COMMIT vazio #051
+```
+git commit --allow-empty
+
+commit:descrição: comando para gerenciar, acessar  os commits.
+--allow-empty:descrição: opção que permite a criação de um commit vazio.
+Obs: esse comando abrirá um editor de texto para escrita da mensagem de commit.
+```
+
+## RENOMEANDO um arquivo #052
+```
+git mv origem destino
+
+mv:descrição: comando para "mover" arquivos.
+origem:descrição: nome atual do arquivo.
+destino:descrição: novo nome do arquivo.
+Obs: esse comando pode ser usado para mover arquivos entre pastas.
+```
 
 
