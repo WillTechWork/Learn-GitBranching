@@ -446,5 +446,12 @@ origem:descrição: nome atual do arquivo.
 destino:descrição: novo nome do arquivo.
 Obs: esse comando pode ser usado para mover arquivos entre pastas.
 ```
+## COMANDOS DE LOGIN USERNAME E EMAIL AO GITHUB #053
+```
+git config --global user.name ""
+git config --global user.email ""
+
+descrição:comando para realizar login de suas credenciais do github.
+```
 
 
